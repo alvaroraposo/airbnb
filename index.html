@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aluguéis por Temporada, Acomodações, Experiências e Lugares - Airbnb</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css?v=2">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightpick.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div id="menu01" class="row">
+			<div class="col-1">
+				<a class="nav-link" href="#"><img src="images/airbnb-grande.png"></a>
+			</div>
+			<div class="col-11">
+				<ul class="nav justify-content-end">
+					<li class="nav-item">
+						<div class="dropdown">
+							<div class="btn-group">
+								<button type="button" id="dropdownMenuButton" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-globe"></i>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right">
+								  <a class="dropdown-item" href="#"><i class="fas fa-globe"></i> Português (BR)</a>
+								  <a class="dropdown-item" href="#">R$ BRL</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Hospede em sua acomodação</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Hospede uma experiência</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Ajuda</a>						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Entrar</a>						
+					</li>
+					<li class="nav-item">
+						<button type="button" class="btn btn-light">Cadastrar-se</button>						
+					</li>
+				</ul>				
+			</div>		
+		</div>
+		<div id="menu02" class="row">
+			<ul class="nav">
+				<li class="nav-item"><a class="nav-link active"><p>Lugares para ficar</p></a></li>
+				<li class="nav-item"><a class="nav-link" href="">Estadias longas</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Experiências</a></li>
+				<li class="nav-item"><a class="nav-link" href=""><p>Experiências Online</p><span class="nav-link">Novo</span></a></li>
+			</ul>			
+		</div>
+		<div id="menu03" class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div id="divLocalizacao">
+					<label for="">Localização</label>
+					<input id="inputLocalizacao" type="text" class="dropdown-toggle" autocomplete="off" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" placeholder="Para onde você vai?"></input>
+					<div class="dropdown-menu" aria-labelledby="inputLocalizacao">
+						<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-compass"></i>Manaus/AM</a>
+						<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-compass"></i>Maués/AM</a>
+						<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-compass"></i>Novo Airão/AM</a>
+						<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-compass"></i>Parintins/AM</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div>
+					<label for="">Check-in/Checkout</label>
+					<input type="text" id="datepicker" autocomplete="off" placeholder="Insira as datas"/>					
+				</div>
+			</div>
+			<div class="col-lg-3 col-12">
+				<div id="divHospedes">				
+					<label for="">Hóspedes</label>																				
+					<div class="dropdown">	
+						<input id="inputHospedes" class="dropdown-toggle" autocomplete="off" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" type="text" placeholder="Insira o número de Hóspedes"/>						
+						<div class="dropdown-menu" aria-labelledby="inputHospedes">
+							<a class="dropdown-item" href="javascript:void(0);">			
+								<div class="w-50">Adultos</div>
+								<div class="btn-group w-50" role="group" aria-label="Third group">									
+									<button type="button" class="btn btn-secondary btn-hospedes">-</button>
+									<p>0</p>
+									<button type="button" class="btn btn-secondary btn-hospedes">+</button>
+								</div>								
+							</a>
+							<a class="dropdown-item" href="javascript:void(0);">			
+								<div class="w-50">Crianças</div>
+								<div class="btn-group w-50" role="group" aria-label="Third group">									
+									<button type="button" class="btn btn-secondary btn-hospedes">-</button>
+									<p>0</p>
+									<button type="button" class="btn btn-secondary btn-hospedes">+</button>
+								</div>								
+							</a>
+							<a class="dropdown-item" href="javascript:void(0);">			
+								<div class="w-50">Bebês</div>
+								<div class="btn-group w-50" role="group" aria-label="Third group">									
+									<button type="button" class="btn btn-secondary btn-hospedes">-</button>
+									<p>0</p>
+									<button type="button" class="btn btn-secondary btn-hospedes">+</button>
+								</div>								
+							</a>
+						</div>
+					</div>				
+				</div>
+			</div>
+			<div class="col-lg-1 col-12">
+				<button id="btnBuscar"><i class="fas fa-search fa-xs"></i>Buscar</button>
+			</div>		
+		</div>
+		<div id="menu04" class="row">
+			<div class="col-6"><h1><span>Podemos estar afastados, mas vamos superar isso juntos.</span></h1></div>
+		</div>
+		<div id="divCards" class="row">
+			<div id="card01" class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+				<div class="card w-100">
+					<img id="imgCard01" src="" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <p class="card-text">Preço R$</p>
+					  <a href="#" class="btn btn-primary">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+			<div id="card02" class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+				<div class="card w-100">
+					<img id="imgCard02" src="" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <p class="card-text">Preço R$</p>
+					  <a href="#" class="btn btn-primary">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+			<div id="card03" class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+				<div class="card w-100">
+					<img id="imgCard03" src="" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <p class="card-text">Preço R$</p>
+					  <a href="#" class="btn btn-primary">Saiba Mais</a>
+					</div>
+				</div>
+			</div>						
+		</div>
+		<div id="divPagination" class="row">
+			<div class="col-12">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination justify-content-center">
+					  <li class="page-item disabled">
+						<a class="page-link" href="javascript:void(0);" aria-label="Previous">
+						  <span aria-hidden="true">&laquo;</span>
+						</a>
+					  </li>
+					  <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">1</a></li>
+					  <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+					  <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+					  <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+					  <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
+					  <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
+					  <li class="page-item"><a class="page-link" href="javascript:void(0);">7</a></li>
+					  <li class="page-item"><a class="page-link" href="javascript:void(0);">8</a></li>
+					  <li class="page-item">
+						<a class="page-link" href="javascript:void(0);" aria-label="Next">
+						  <span aria-hidden="true">&raquo;</span>
+						</a>
+					  </li>
+					</ul>
+				</nav>
+			</div>			
+		</div>
+	</div>
+	
+	<script  charset="UTF-8" type="text/javascript" src="airbnb.js?v=4"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+	<script src="lightpick.js"></script>
+	<script>
+		function rangeText(start, end) {
+			var meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+			var str = '';
+			
+			str += start ? start._d.getUTCDate() + " " + meses[start._d.getMonth()] + " " + start._d.getUTCFullYear() : '';
+			str += end ? ' até ' + end._d.getUTCDate() + " " +  meses[end._d.getMonth()] + " " + end._d.getUTCFullYear(): '...';
+
+			var periodo = (end - start)/86400000;
+
+			if(start && end)
+			{
+				str += periodo > 1 ? " (" + periodo + " Diárias)" : " (1 Diária)";
+			}		
+
+        	return str;
+		}
+		
+		var picker = new Lightpick({ 
+			field: document.getElementById('datepicker'),
+			lang: 'pt',
+			singleDate: false,
+			selectBackward: false,
+			minDate: moment(),
+			numberOfMonths: 2,
+			onSelect: function(start, end){
+        		document.getElementById('datepicker').value = rangeText(start, end);
+    		}
+	 	});		
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

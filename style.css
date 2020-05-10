@@ -1,0 +1,331 @@
+body {
+    padding-top: 1em ;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.btn-light {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: rgb(240, 240, 240) 1px 1px;
+    font-size: 14.5px;
+    font-weight: 500;
+    height: 100%;
+    width: 125px;
+    margin-left: 0.3em;
+}
+
+.btn-light:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(240, 240, 240);
+}
+
+#menu01 {
+    margin-bottom: 30px;
+}
+
+#menu01 div.col-1 {
+    padding: 0;
+}
+
+#menu01 div.col-1 a.nav-link {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#menu01 a.nav-link img {
+    width: 137px;
+    height: 42px;
+    padding: 0;
+    display: block;
+}
+
+#menu01 a {
+    background-color: white;
+    color: black;
+    font-size: 14.5px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#menu01 a:hover {
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+}
+
+#menu01 button+div a:hover {
+    background-color: rgb(245, 245, 245);
+    border-radius: 0;
+}
+
+#dropdownMenuButton {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    height: 100%;
+    margin: 0;
+}
+
+#menu01 button+div {
+    border: 1px solid black;
+}
+
+#menu01 .btn-group, .dropdown {
+    height: 100%;
+    width: 100%;    
+}
+
+#dropdownMenuButton:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#dropdownMenuButton:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.fa-globe{
+    color: black;    
+}
+
+#menu02 a {
+    background-color: white;
+    color: darkslategray;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#menu02 a:hover {
+    color: gray;
+}
+
+#menu02 a p {
+    float: left;
+    margin-right: 5px;
+}
+
+#menu02 a p+span {
+    float: left;
+    color: white;
+    background-color: crimson;
+    padding: 3px 5px 3px 5px; /*top right */
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+#menu02 a.active p {
+    border-bottom: 2px solid darkslategray;
+    padding-bottom: 3px;
+}
+
+#menu03 {
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+#menu03 label {
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#menu03 input {
+    border: none;
+    margin: 0px 0px 5px 0px;
+    width: 100%;
+    height: auto;
+}
+
+#menu03 input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#btnBuscar {
+    float: right;
+    height: 55px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: crimson;
+    font-weight: 500;
+}
+
+#menu03 div {
+    padding: 12px 0px 12px 5px;
+    height: 100%;
+}
+
+
+#menu03 > div > div {
+    border-right: 1px solid rgb(240, 240, 240);
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 15px;
+}
+
+#menu03 div:focus-within {
+    border: 3px black
+}
+
+#menu03 .col-3 div {
+    border-right: none;
+}
+
+#menu03 input[type="date"] {
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+}
+
+#divCards > div {
+    margin-bottom: 3px;
+}
+
+#inputHospedes+.dropdown-menu.show {
+    border: 1px solid black;
+    height: 320%;
+    width: 50%;
+    padding: 0;
+}
+
+#divHospedes .dropdown {
+    padding: 0;
+}
+
+#divHospedes .dropdown a div {
+    padding: 0;
+}
+
+#inputLocalizacao+.dropdown-menu.show {
+    border: 1px solid black;
+    height: 170%;
+    width: 45%;
+    padding-top: 0;
+}
+
+#divLocalizacao .dropdown-item {
+    padding: 7px 3px 0 0;
+}
+
+#divLocalizacao i {
+    margin-right: 3px;
+}
+
+#divHospedes .dropdown-menu .dropdown-item div{
+    float: left;
+/*    width: 50%;    */
+}
+
+.btn-group {
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: crimson;
+    border: none;
+}
+
+.page-link {
+    color: crimson;
+}
+
+.btn-hospedes {
+    float: left;
+    height: 2%;
+    max-width: 20%;
+    padding: 0;
+    background-color: crimson;
+}
+
+.btn-hospedes:focus {
+    background-color: crimson;
+}
+
+.btn-hospedes+p {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#inputHospedes+div a.dropdown-item:hover div {
+    background-color: inherit;
+}
+
+#inputHospedes+div a.dropdown-item:focus {
+    background-color: white;
+}
+
+#divHospedes {
+    padding: 0;
+}
+
+i.fa-search {
+    margin-right: 5px;
+}
+
+#menu04 {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+#menu04 div {
+    padding: 0;
+}
+
+#menu04 h1 {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#menu04 h1 span {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    color: crimson;
+    font-size: 3vw;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+
+.card p:first-of-type {
+    text-transform: lowercase;
+    transition: all 1s ease-in;
+}
+
+.card p::first-letter {
+    text-transform: uppercase;
+}
+
+.card p:nth-of-type(2) {
+    font-style: inherit;
+    font-weight: bold;
+    transition: all 1s ease-in;
+}
+
+#divPagination {
+    margin-top: 5px;
+}
